@@ -9,6 +9,17 @@ It stores:
 - **Images** related to arrangements
 - **News** posts for members
 
+## Database
+
+The project uses **Microsoft SQL Server** as the database engine.
+
+All scripts target a database named **PagajClubDB**:
+
+```sql
+USE PagajClubDB;
+GO
+```
+
 The goal of the project is to design the schema, load sample data, run a few example queries, and show the result in an ER diagram and screenshots.
 
 ---
