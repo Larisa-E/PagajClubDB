@@ -69,23 +69,6 @@ After creating the schema, `seed.sql` inserts a small set of realistic data:
 
 To confirm that the data was loaded correctly, the following query is run to show row counts for each table:
 
-```sql
-USE PagajClubDB;
-GO
-SELECT 'categories' AS tbl, COUNT(*) AS cnt FROM dbo.categories
-UNION ALL
-SELECT 'members', COUNT(*) FROM dbo.members
-UNION ALL
-SELECT 'arrangements', COUNT(*) FROM dbo.arrangements
-UNION ALL
-SELECT 'images', COUNT(*) FROM dbo.images
-UNION ALL
-SELECT 'news', COUNT(*) FROM dbo.news;
-GO
-```
-
-The result of this check looks like:
-
 ![Seed counts](docs/seedCounts.png)
 
 ---
